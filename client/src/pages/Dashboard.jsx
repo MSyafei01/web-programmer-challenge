@@ -39,7 +39,14 @@
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="flex justify-between items-center mb-8">
-
+            <div>
+                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+                Dashboard
+                </h1>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">
+                Welcome back, {user?.username || user?.email}!
+                </p>
+            </div>
             <button
                 onClick={handleLogout}
                 className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors"
